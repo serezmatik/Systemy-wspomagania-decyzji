@@ -1,17 +1,32 @@
 
 Odpowiedzi na pytania z ćwiczenia:
-<center>Losowy podział punktów<center/>
-1.	Dlaczego sieć osiąga tak niską skuteczność trenowania na wskazanym zbiorze.
-Sieć może osiągać niską skuteczność trenowania na wskazanym zbiorze danych z kilku powodów:
-Złożoność danych: Zbiór danych wygenerowany w kodzie zawiera różnorodne kształty i rozkłady, co może sprawić, że klasyfikacja staje się trudniejsza, zwłaszcza dla modelu o prostszej architekturze.
-Architektura modelu: Wybrana architektura modelu (liczba warstw i neuronów na warstwę, rodzaj aktywacji) może nie być wystarczająco złożona, aby dobrze dopasować się do danych.
-Liczba epok: W przypadku niskiej liczby epok treningowych model może nie zdążyć nauczyć się wystarczająco dużo informacji z danych.
 
-2.	Czy jest coś co można zrobić aby klasyfikator poprawił jakość trenowania?
-Aby poprawić jakość trenowania klasyfikatora, można podjąć kilka działań:
-Zwiększyć złożoność modelu: Można spróbować zwiększyć liczbę warstw i/neuronów na warstwę w modelu, aby dać mu większą zdolność do nauki złożonych wzorców w danych.
-Dopasować hiperparametry: Tuning hiperparametrów, takich jak współczynniki uczenia, może pomóc w poprawie jakości trenowania. Warto eksperymentować z różnymi wartościami tych hiperparametrów.
-Zwiększyć liczbę epok: Dłuższy trening może pomóc modelowi w lepszym dopasowaniu się do danych. Jednak należy uważać, aby uniknąć przeuczenia.
-Zastosować inne techniki regularyzacji: Można spróbować zastosować techniki regularyzacji, takie jak dropout czy normalizacja warstw, aby zmniejszyć ryzyko przeuczenia.
-Inżynieria cech: W niektórych przypadkach inżynieria cech może pomóc w ułatwieniu zadania klasyfikacji poprzez dostarczenie modelowi bardziej istotnych informacji.
-Ostatecznie, poprawa jakości trenowania może wymagać eksperymentowania z różnymi konfiguracjami modelu, hiperparametrów i technik, a także analizy danych w celu lepszego zrozumienia ich charakterystyki.
+Losowy Podział Punktów
+1. Dlaczego sieć osiąga tak niską skuteczność trenowania na wskazanym zbiorze?
+
+
+Złożoność danych: Zbiór danych może zawierać różnorodne kształty i rozkłady, co utrudnia klasyfikację, zwłaszcza dla prostszych modeli.
+Architektura modelu: Prostsza architektura modelu może nie być wystarczająco zdolna do dopasowania się do złożonych danych.
+Liczba epok: Niewystarczająca liczba epok treningowych może nie pozwolić modelowi na efektywną naukę. 
+
+2. Czy jest coś, co można zrobić, aby klasyfikator poprawił jakość trenowania?
+
+Zwiększenie złożoności modelu: Dodanie warstw i neuronów może pomóc w lepszym dopasowaniu do danych.
+Dopasowanie hiperparametrów: Eksperymentowanie z różnymi wartościami współczynników uczenia i innych hiperparametrów.
+Zwiększenie liczby epok: Dłuższy trening może poprawić dopasowanie modelu do danych.
+Techniki regularyzacji: Stosowanie dropoutu czy normalizacji warstw może zmniejszyć ryzyko przeuczenia.
+Inżynieria cech: Przygotowanie danych w sposób, który ułatwia klasyfikację.
+Podział Gaussa
+1. Dlaczego wyniki trenowania są lepsze niż w poprzednim zbiorze?
+
+Rozróżnialność danych: Zmodyfikowany zbiór trenujący, wykorzystujący podział Gaussa, generuje bardziej oddzielone dane, co ułatwia naukę i klasyfikację.
+Zwiększenie liczby epok: Pozwala modelowi na lepsze dopasowanie się do bardziej złożonych danych.
+2. Czy architektura sieci ma znaczny wpływ na jakość klasyfikacji?
+
+Tak, wybór architektury sieci jest kluczowy dla klasyfikacji, włączając w to liczbę warstw, neuronów i typ funkcji aktywacji.
+3. Czy szybkość trenowania ma wpływ na jakość klasyfikacji?
+
+Tak, odpowiednia szybkość trenowania jest ważna dla uniknięcia przeuczenia oraz zapewnienia odpowiedniej dokładności.
+4. Czy rodzaj optymalizatora ma wpływ na jakość klasyfikacji?
+
+Tak, wybór optymalizatora ma znaczenie dla uniknięcia problemów, takich jak zatrzymanie w minimum lokalnym, i wpływa na skuteczność uczenia się modelu.
