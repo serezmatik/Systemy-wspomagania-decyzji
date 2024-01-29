@@ -1,3 +1,6 @@
+
+Odpowiedzi na pytania z ćwiczenia:
+<center>Losowy podział punktów<center/>
 1.	Dlaczego sieć osiąga tak niską skuteczność trenowania na wskazanym zbiorze.
 Sieć może osiągać niską skuteczność trenowania na wskazanym zbiorze danych z kilku powodów:
 Złożoność danych: Zbiór danych wygenerowany w kodzie zawiera różnorodne kształty i rozkłady, co może sprawić, że klasyfikacja staje się trudniejsza, zwłaszcza dla modelu o prostszej architekturze.
